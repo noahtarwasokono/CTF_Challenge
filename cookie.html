@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Challenge</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #333;
+      margin-top: 20px;
+    }
+
+    img {
+      max-width: 200px;
+      margin: 20px auto;
+    }
+
+    .riddle-container {
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome, {{ username }}! Find the Flag!</h1>
+  <!-- Check the image path -->
+  <img src="{{ url_for('static', filename='images/thinking-person.png') }}" alt="Thinking Person">
+  
+  <div class="riddle-container">
+    <p>
+      "I hide in plain sight, yet I’m rarely seen,  
+      I’m a treat for the keen on a digital screen.  
+      I travel unseen with every request,  
+      Inspect me closely; I’m not like the rest."
+    </p>
+    <p>
+      "Though my name suggests something sweet,  
+      You’ll find me stored where secrets meet.  
+      Decode my clues to reveal what I hold,  
+      I guard what is precious, a treasure of gold."
+    </p>
+    <p><strong>What am I?</strong></p>
+  </div>
+</body>
+</html>
+

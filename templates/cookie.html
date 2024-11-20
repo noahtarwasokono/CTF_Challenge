@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find the Cookie!</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div id="cookie-screen">
+    <h1>Welcome, {{ username }}! Find the Flag!</h1>
+    <div id="cookie-image-container">
+      <img src="{{ url_for('static', filename='cookie.png') }}" alt="Cookie" id="cookie-image">
+    </div>
+    <p>Search for the flag hidden in the cookie!</p>
+  </div>
+</body>
+</html>
